@@ -1,10 +1,10 @@
 # FIIN - Firmware Inspector v0.2
-(c) 2001,2002 Jacek Lipkowski <sq5bpf@andra.com.pl>
+(c) 2001,2002 Jacek Lipkowski <sq5bpf@lipkowski.org>
 
 Note: this was originally written in 2001, and was the first generally 
 avaliable tool to decompress firmware images (binwalk was released a few 
 years later). I'm making it avaliable again on github for historical 
-purposes. Original readme follows:
+purposes. Original README follows:
 
 
 This (lame/badly written) utility tries to find compressed files in
@@ -76,13 +76,13 @@ is the reason why fiin doesn't decompress the files itself.
 
 
 If you've tried it on any other compressed firmware then please send me a
-note to sq5bpf@acid.ch.pw.edu.pl.
+note to sq5bpf@lipkowski.org
 
 
 ### Where to get it
 
 The latest version should be avaliable at:
-http://acid.ch.pw.edu.pl/~sq5bpf/mylinux/fiin/
+https://github.com/sq5bpf/fiin
 
 ### License
 

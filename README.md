@@ -1,10 +1,10 @@
 # FIIN - Firmware Inspector v0.2
-(c) 2001,2002 Jacek Lipkowski <sq5bpf@andra.com.pl>
+(c) 2001,2002 Jacek Lipkowski <sq5bpf@lipkowski.org>
 
-Note: this was originally written in 2001, and was the first generally 
-avaliable tool to decompress firmware images (binwalk was released a few 
-years later). I'm making it avaliable again on github for historical 
-purposes. Original readme follows:
+*Note: this was originally written in 2001, and was the first generally*
+*avaliable tool to decompress firmware images (binwalk was released a few* 
+*years later). I'm making it avaliable again on github for historical*
+*purposes. If in doubt, use binwalk. Original README follows:*
 
 
 This (lame/badly written) utility tries to find compressed files in
@@ -42,7 +42,9 @@ Example usage (on cisco router firmware):
 
 Run fiin:
 
+
 sq5bpf@hash:~$ fiin -f c1700-y-mz.120-1.XA3 -o plik -w unarj
+
 FIIN v0.2, Copyright (C) 2001 Jacek Lipkowski <sq5bpf@andra.com.pl>
 FIIN comes with ABSOLUTELY NO WARRANTY
 This is free software, and you are welcome to redistribute it
@@ -52,6 +54,7 @@ under the GPL version 2 license. Please see the file LICENSE for details.
 *** image at offset 0x3fac saved as plik-0.zip ***
 
 sq5bpf@hash:~$ unzip -v -l plik-0.zip
+
 Archive:  plik-0.zip
  Length   Method    Size  Ratio   Date   Time   CRC-32    Name
 --------  ------  ------- -----   ----   ----   ------    ----
@@ -59,7 +62,9 @@ Archive:  plik-0.zip
 --------          -------  ---                            -------
  6263180          2426074  61%                            1 file
 
+
 Unpack the resulting archive:
+
 
 sq5bpf@hash:~$ unzip plik-0.zip
 Archive:  plik-0.zip
@@ -67,7 +72,10 @@ Archive:  plik-0.zip
 
 Launch our sophisticated forensic tool:
 
+
 sq5bpf@hash:~$ strings C1700-Y-.BIN |less -i
+
+
 enjoy :)
 
 Please be warned that some unnamed vendor might have named the file inside
@@ -76,13 +84,13 @@ is the reason why fiin doesn't decompress the files itself.
 
 
 If you've tried it on any other compressed firmware then please send me a
-note to sq5bpf@acid.ch.pw.edu.pl.
+note to sq5bpf@lipkowski.org
 
 
 ### Where to get it
 
 The latest version should be avaliable at:
-http://acid.ch.pw.edu.pl/~sq5bpf/mylinux/fiin/
+https://github.com/sq5bpf/fiin
 
 ### License
 
